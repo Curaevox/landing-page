@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const outcomes = [
-  { stat: "100%", label: "of inbound calls answered, 24/7 — including after hours" },
+  { stat: "100%", label: "of inbound calls answered, 24/7, including after hours" },
   { stat: "31% → 12%", label: "illustrative drop in no-shows with reminders & follow-up" },
   { stat: "Every visit", label: "closed with an automated, structured follow-up" },
 ];

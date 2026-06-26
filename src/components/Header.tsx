@@ -103,7 +103,7 @@ export function Header() {
   const { openDemo } = useDemo();
 
   return (
-    <header className="sticky top-0 z-50 bg-linen-white/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-line bg-surface/90 backdrop-blur-sm">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4 lg:px-8">
         <LogoLink href="/" />
 

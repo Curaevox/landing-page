@@ -20,7 +20,7 @@ export function LogoWordmark({ light = false }: { light?: boolean }) {
     <span className="flex items-center gap-2.5">
       <LogoMark light={light} />
       <span
-        className={`font-display text-[21px] font-semibold tracking-[-0.02em] ${light ? "text-linen-white" : "text-ink"}`}
+        className={`deck-wordmark text-[23px] leading-none tracking-[-0.01em] ${light ? "text-linen-white" : "text-ink"}`}
       >
         Curaevox
       </span>

@@ -1,49 +1,66 @@
 @import "tailwindcss";
 
 /*
- * Curaevox palette — deep teal ink + coral "signal" (voice/live) accent.
- * Defined in a plain @theme so Tailwind both generates utilities (bg-ink,
- * text-signal, …) AND emits the values as :root CSS vars, which the inline
- * var(--color-…) usages in Logo/Hero and the keyframes below rely on.
+ * Curaevox palette, defined in a plain @theme so Tailwind both generates
+ * utilities (bg-ink, text-signal, …) AND emits the values as :root CSS vars,
+ * which the inline var(--color-…) usages in Logo/Hero and the keyframes below
+ * rely on.
  */
 @theme {
-  --color-ink: #06312f;
-  --color-teal: #0e6b6f;
-  --color-teal-bright: #15a3a3;
+  /*
+   * Palette derived from the Curaevox pitch deck: #202020 ink on white,
+   * #d5e6f6 periwinkle-blue panels, a coral "signal" accent, and a deep
+   * deck-blue standing in for the old teal.
+   */
+  --color-ink: #202020;
+  --color-teal: #2f5d7c;
+  --color-teal-bright: #4f86ad;
   --color-signal: #ff6a4d;
   --color-signal-soft: #ffe4dd;
-  --color-mist: #bfe3de;
-  --color-sky: #d9e9ee;
-  --color-mint: #d4ece6;
-  --color-halo: #eaf3f1;
-  --color-canvas: #f6f8f7;
+  --color-mist: #c3dbf3;
+  --color-sky: #e4eefb;
+  --color-mint: #dbe8fa;
+  --color-halo: #eef4fb;
+  --color-canvas: #ffffff;
   --color-surface: #ffffff;
-  --color-line: #e2e8e6;
-  --color-muted: #41534f;
-  --color-muted-soft: #6b7c78;
+  --color-line: #e3e8ee;
+  --color-muted: #4a4f55;
+  --color-muted-soft: #7b8288;
+
+  /* The deck's signature periwinkle panel + soft coral. */
+  --color-deck-ink: #202020;
+  --color-deck-blue: #d5e6f6;
+  --color-deck-blue-soft: #e7f0fb;
+  --color-deck-coral: #f4a98c;
 
   /* Legacy aliases so not-yet-rewritten components stay on-brand */
-  --color-forest-ink: #06312f;
-  --color-sage-wash: #bfe3de;
-  --color-mist-blue: #d9e9ee;
-  --color-mint-veil: #d4ece6;
-  --color-linen: #eaf3f1;
-  --color-linen-white: #fbfdfc;
-  --color-hairline-gray: #e2e8e6;
-  --color-charcoal: #25342f;
-  --color-graphite: #6b7c78;
-  --color-true-black: #07211e;
+  --color-forest-ink: #202020;
+  --color-sage-wash: #c3dbf3;
+  --color-mist-blue: #d5e6f6;
+  --color-mint-veil: #e4eefb;
+  --color-linen: #eef4fb;
+  --color-linen-white: #ffffff;
+  --color-hairline-gray: #e3e8ee;
+  --color-charcoal: #202020;
+  --color-graphite: #7b8288;
+  --color-true-black: #161616;
 
   --radius-nav: 8px;
   --radius-card: 16px;
+  --radius-panel: 28px;
+  --radius-blob: 56px;
   --radius-pill: 999px;
 }
 
 /* Fonts kept inline so utilities reference the runtime next/font vars on <html>. */
 @theme inline {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-bricolage), "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-bricolage), "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  /* The deck sets all copy in Plus Jakarta Sans; the bubbly wordmark uses
+     Fredoka (a free stand-in for the deck's Junegull). */
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-jakarta: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-fredoka: var(--font-fredoka), ui-rounded, "Segoe UI Rounded", system-ui, sans-serif;
 }
 
 :root {
@@ -54,7 +71,7 @@
 body {
   background: var(--color-canvas);
   color: var(--color-ink);
-  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
   font-weight: 400;
   letter-spacing: normal;
 }
@@ -65,7 +82,7 @@ body {
 }
 
 /* ---- Voice / live-call motifs ---------------------------------------- */
-/* Motion language: everything flows left→right — the voice moving forward.
+/* Motion language: everything flows left→right, the voice moving forward.
    Live dot: a single soft sonar ring eases outward (a calm, ongoing
    connection) rather than the hard "ping" pulse. */
 @keyframes sonar {
@@ -156,6 +173,13 @@ html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/* ---- Brand wordmark --------------------------------------------------- */
+.deck-wordmark {
+  font-family: var(--font-fredoka);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 @media (prefers-reduced-motion: reduce) {

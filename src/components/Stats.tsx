@@ -28,7 +28,7 @@ export function Stats() {
           The shortage is the context. Access is the fight.
         </h2>
         <p className="mt-[14px] max-w-[640px] text-[18px] leading-[1.5] text-muted">
-          There aren&apos;t enough clinicians — and the ones we have spend hours on admin instead of
+          There aren&apos;t enough clinicians, and the ones we have spend hours on admin instead of
           patients. Curaevox handles the front door and the follow-up, so that time goes back to
           care.
         </p>

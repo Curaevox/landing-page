@@ -18,7 +18,7 @@ export function About() {
           <div>
             <p className="text-[18px] leading-[1.5] text-muted">
               Curaevox builds AI voice agents for the two moments that decide whether someone gets
-              care — the first call in, and the follow-up after. We pair natural conversation with
+              care, the first call in, and the follow-up after. We pair natural conversation with
               real tools: doctor matching, live availability, automated booking, and structured
               follow-up. Clinicians get their time back; patients get answered, every time, in their
               own language.

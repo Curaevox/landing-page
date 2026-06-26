@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 /**
  * Momentum smooth-scrolling that matches the live easehealth.com feel
- * (the production site runs Lenis — `html.lenis`). Without this, the page
+ * (the production site runs Lenis via `html.lenis`). Without this, the page
  * uses raw browser wheel scrolling, which is the "scroll feels off" problem.
  *
  * Lenis is driven by GSAP's ticker and pushes updates to ScrollTrigger so the
@@ -16,14 +16,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
  */
 export function LenisProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    // Respect users who ask for reduced motion — no virtualized scroll for them.
+    // Respect users who ask for reduced motion, so no virtualized scroll for them.
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     gsap.registerPlugin(ScrollTrigger);
 
     const lenis = new Lenis({
       duration: 1.15,
-      // easeOutExpo — long, weighted glide that settles softly.
+      // easeOutExpo, a long, weighted glide that settles softly.
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       wheelMultiplier: 1,

@@ -2,9 +2,9 @@
 
 import { useDemo } from "./DemoProvider";
 
-/** Animated voice waveform — a crest travels rightward through the bars. */
+/** Animated voice waveform; a crest travels rightward through the bars. */
 function Waveform({ className = "" }: { className?: string }) {
-  // [base height, period] — slightly uneven periods keep the wave organic.
+  // [base height, period]; slightly uneven periods keep the wave organic.
   const bars: [number, number][] = [
     [0.5, 1.5], [0.85, 1.72], [0.35, 1.46], [1, 1.8],
     [0.6, 1.56], [0.9, 1.68], [0.45, 1.5], [0.75, 1.62],
@@ -96,13 +96,13 @@ export function Hero() {
             <Waveform className="scale-[0.6]" />
             AI voice agents for patient access
           </span>
-          <h1 className="mt-[20px] font-display text-[46px] font-semibold leading-[1.02] tracking-[-0.03em] text-ink sm:text-[58px] lg:text-[72px]">
+          <h1 className="mt-[20px] font-display text-[46px] font-bold leading-[1.02] tracking-[-0.035em] text-ink sm:text-[58px] lg:text-[72px]">
             Care that always
             <br />
             picks up.
           </h1>
           <p className="mt-[22px] max-w-[520px] text-[18px] leading-[1.5] text-muted">
-            The phone is the front door to your hospital — and roughly a third of patient calls go
+            The phone is the front door to your hospital, and roughly a third of patient calls go
             unanswered. Curaevox answers every one, books the right doctor automatically, and follows
             up after every visit.
           </p>
@@ -136,8 +136,15 @@ export function Hero() {
         </div>
 
         {/* live-call visual */}
-        <div className="relative rounded-[20px] bg-gradient-to-br from-mist to-sky p-[22px] lg:p-[32px]">
-          <LiveCallCard />
+        <div className="relative overflow-hidden rounded-[36px] border border-ink/15 bg-deck-blue p-[22px] lg:p-[32px]">
+          {/* deck coral glow */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -bottom-28 -right-20 h-80 w-80 rounded-full bg-signal/30 blur-3xl"
+          />
+          <div className="relative">
+            <LiveCallCard />
+          </div>
         </div>
       </div>
     </section>

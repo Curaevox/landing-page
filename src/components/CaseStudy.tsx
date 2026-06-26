@@ -36,7 +36,7 @@ export function CaseStudy() {
                 0
               </p>
               <p className="mt-2 text-[14px] leading-[1.5] text-muted">
-                after-hours calls left unanswered — every call triaged and booked
+                after-hours calls left unanswered. Every call triaged and booked
               </p>
             </div>
             <div className="rounded-[16px] bg-mint p-[28px]">

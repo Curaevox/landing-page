@@ -51,7 +51,7 @@ export function ClinicalSupport() {
             Every caller gets the same patient, unbiased intake.
           </h2>
           <p className="mt-[14px] text-[18px] leading-[1.5] text-muted">
-            Peer-reviewed audits show appointment access varies by race and language — who gets asked
+            Peer-reviewed audits show appointment access varies by race and language: who gets asked
             about insurance, who waits longer, who can even book in their own language. Curaevox asks
             every caller the same questions, in their language, every time.
           </p>

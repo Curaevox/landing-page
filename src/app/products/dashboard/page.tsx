@@ -7,12 +7,12 @@ const sections = [
   {
     id: "companion",
     title: "Per-patient AI companion",
-    body: "Every patient gets a dedicated agent — a companion the doctor owns. All of a patient's calls, bookings, and follow-ups live together in one timeline.",
+    body: "Every patient gets a dedicated agent, a companion the doctor owns. All of a patient's calls, bookings, and follow-ups live together in one timeline.",
   },
   {
     id: "configure",
     title: "Configure agent actions",
-    body: "Doctors decide exactly what each agent can do — which questions to ask, when to escalate, what it can book. The agent only acts within the guardrails you set.",
+    body: "Doctors decide exactly what each agent can do: which questions to ask, when to escalate, what it can book. The agent only acts within the guardrails you set.",
   },
   {
     id: "monitor",
@@ -31,7 +31,7 @@ export default function DashboardPage() {
     <ProductPageShell
       product="Doctor Dashboard"
       title="Every patient's agent, in one place"
-      description="Configure, monitor, annotate, and summarize every agent conversation — a companion for every patient, owned by the doctor."
+      description="Configure, monitor, annotate, and summarize every agent conversation. A companion for every patient, owned by the doctor."
       sections={sections}
     />
   );

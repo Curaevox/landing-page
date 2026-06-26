@@ -8,9 +8,9 @@ import { PrimaryButton } from "./ui/PrimaryButton";
 
 const products = [
   {
-    title: "Answers, triages & books — on the first call",
+    title: "Answers, triages, and books on the first call",
     description:
-      "A patient calls your number. The agent listens, understands the issue, checks doctor availability and insurance, recommends the right doctor, and books the slot — no hold, no callback.",
+      "A patient calls your number. The agent listens, understands the issue, checks doctor availability and insurance, recommends the right doctor, and books the slot. No hold, no callback.",
     benefits: ["Natural conversation", "Doctor matching", "Live availability & eligibility", "Automated booking"],
     cta: "Explore the Inbound Agent",
     href: "/products/inbound-agent",
@@ -20,7 +20,7 @@ const products = [
   {
     title: "Follows up after every visit, automatically",
     description:
-      "After the appointment, the agent calls to check on recovery, medication adherence, and next steps — then files a structured follow-up report straight to the doctor's dashboard.",
+      "After the appointment, the agent calls to check on recovery, medication adherence, and next steps, then files a structured follow-up report straight to the doctor's dashboard.",
     benefits: ["Post-visit check-ins", "Adherence & care gaps", "Structured reports", "No-show recovery"],
     cta: "Explore Follow-up",
     href: "/products/follow-up",
@@ -30,7 +30,7 @@ const products = [
   {
     title: "Every patient's agent, on one dashboard",
     description:
-      "Doctors configure what each agent can do, monitor live and past conversations, attach notes, and get AI summaries — a companion for every patient, all in one place.",
+      "Doctors configure what each agent can do, monitor live and past conversations, attach notes, and get AI summaries. A companion for every patient, all in one place.",
     benefits: ["Per-patient AI companion", "Configure agent actions", "Monitor & annotate", "AI summaries"],
     cta: "Explore the Dashboard",
     href: "/products/dashboard",
@@ -79,7 +79,7 @@ function ProductMockup({ type }: { type: "inbound" | "outbound" | "dashboard" })
             I need a dermatologist, ideally this week.
           </div>
           <div className="w-fit max-w-[85%] rounded-[10px] rounded-tl-[4px] bg-teal px-3 py-1.5 text-[12px] text-white">
-            Dr. Lee has Monday 9:15 AM and takes your plan — booking now.
+            Dr. Lee has Monday 9:15 AM and takes your plan. Booking now.
           </div>
         </div>
         <div className="flex items-center justify-between rounded-[10px] bg-ink px-3 py-2.5">
@@ -102,7 +102,7 @@ function ProductMockup({ type }: { type: "inbound" | "outbound" | "dashboard" })
         <div className="mt-3 space-y-2 border-t border-line pt-3 text-[12px]">
           <div className="flex items-start gap-2">
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal" />
-            <span className="text-muted">Recovering well, mild soreness — within expected range.</span>
+            <span className="text-muted">Recovering well, mild soreness, within expected range.</span>
           </div>
           <div className="flex items-start gap-2">
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal" />
@@ -110,7 +110,7 @@ function ProductMockup({ type }: { type: "inbound" | "outbound" | "dashboard" })
           </div>
           <div className="flex items-start gap-2">
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" />
-            <span className="text-ink">Flag: requests earlier follow-up visit — routed to scheduling.</span>
+            <span className="text-ink">Flag: requests earlier follow-up visit, routed to scheduling.</span>
           </div>
         </div>
       </MockCard>
@@ -200,7 +200,7 @@ export function ProductSections() {
         </h3>
       </ScrollReveal>
 
-      {/* Pinned, vertically-centered horizontal scroll (desktop) — stacks on mobile. */}
+      {/* Pinned, vertically-centered horizontal scroll (desktop) that stacks on mobile. */}
       <div ref={wrapRef} className="overflow-hidden lg:h-screen">
         <div className="flex h-full flex-col items-center gap-[21px] lg:flex-row">
           <div

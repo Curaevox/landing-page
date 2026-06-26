@@ -8,11 +8,11 @@ import { ScrollReveal } from "./animations/ScrollReveal";
 
 const complianceItems = [
   "HIPAA-ready: signed BAAs, end-to-end encryption, and PHI handled in a secure, audited environment.",
-  "Every call is recorded, transcribed, and logged — fully reviewable by your team.",
+  "Every call is recorded, transcribed, and logged, fully reviewable by your team.",
   "Doctor-configurable guardrails: the agent only takes the actions you approve.",
-  "Human-in-the-loop by design — escalate to staff anytime; clinicians review and override.",
+  "Human-in-the-loop by design. Escalate to staff anytime, and clinicians review and override.",
   "Role-based access controls and complete audit trails across every patient and agent.",
-  "Works with your existing phone numbers, EHR, and scheduling — no rip-and-replace.",
+  "Works with your existing phone numbers, EHR, and scheduling. No rip-and-replace.",
 ];
 
 function ComplianceItem({ item, index }: { item: string; index: number }) {

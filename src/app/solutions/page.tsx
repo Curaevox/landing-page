@@ -12,7 +12,7 @@ const byOrg = [
   {
     id: "clinics",
     title: "Clinics & private practice",
-    body: "Give a small front desk superpowers — never miss an after-hours call, cut no-shows, and free staff from the phone.",
+    body: "Give a small front desk superpowers. Never miss an after-hours call, cut no-shows, and free staff from the phone.",
   },
   {
     id: "specialty",
@@ -22,9 +22,9 @@ const byOrg = [
 ];
 
 const byOutcome = [
-  { id: "capture", title: "Capture every call", body: "Answer 100% of inbound calls, 24/7 — including the after-hours calls that go to voicemail today." },
+  { id: "capture", title: "Capture every call", body: "Answer 100% of inbound calls, 24/7, including the after-hours calls that go to voicemail today." },
   { id: "no-shows", title: "Reduce no-shows", body: "Automated reminders, confirmations, and proactive rebooking turn missed slots into kept appointments." },
-  { id: "equity", title: "Equitable access", body: "Every caller gets the same questions, in their own language, every time — access that doesn't depend on who's calling." },
+  { id: "equity", title: "Equitable access", body: "Every caller gets the same questions, in their own language, every time. Access that doesn't depend on who's calling." },
 ];
 
 export default function SolutionsPage() {
@@ -32,7 +32,7 @@ export default function SolutionsPage() {
     <PageShell
       eyebrow="Solutions"
       title="Built for every front door to care"
-      description="From single clinics to multi-site health systems, Curaevox answers, books, and follows up — on your numbers, in your patients' languages."
+      description="From single clinics to multi-site health systems, Curaevox answers, books, and follows up, on your numbers, in your patients' languages."
     >
       <div className="mt-[56px]">
         <h2 className="font-display text-[24px] font-semibold tracking-[-0.02em] text-ink">By organization</h2>

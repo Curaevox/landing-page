@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="mt-[49px] max-w-3xl space-y-[21px] text-[18px] leading-[1.3] tracking-[-0.54px] text-charcoal">
           <p>
             From documentation and scheduling to billing and reporting, every workflow reflects how
-            care actually happens—not how legacy systems force it to happen.
+            care actually happens, not how legacy systems force it to happen.
           </p>
           <p>
             Our team combines deep patient access operations experience with AI-native product

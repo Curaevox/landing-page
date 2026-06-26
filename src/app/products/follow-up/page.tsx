@@ -7,7 +7,7 @@ const sections = [
   {
     id: "calls",
     title: "Post-visit calls",
-    body: "After an appointment, the outbound agent calls the patient to check on recovery and answer questions — the follow-up that usually never happens because no one has time to make it.",
+    body: "After an appointment, the outbound agent calls the patient to check on recovery and answer questions. It's the follow-up that usually never happens because no one has time to make it.",
   },
   {
     id: "reports",
@@ -22,7 +22,7 @@ const sections = [
   {
     id: "recovery",
     title: "No-show recovery",
-    body: "When a patient misses or cancels, the agent reaches back out, understands what happened, and rebooks — turning lost slots into kept appointments.",
+    body: "When a patient misses or cancels, the agent reaches back out, understands what happened, and rebooks, turning lost slots into kept appointments.",
   },
 ];
 

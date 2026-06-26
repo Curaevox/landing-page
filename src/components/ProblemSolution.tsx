@@ -18,7 +18,7 @@ function CurveLines() {
     const lines = svg.querySelectorAll("line");
     const ctx = gsap.context(() => {
       // Each line grows out to the right, staggered top→bottom, then eases
-      // back — a continuous forward flow, like the call progressing.
+      // back; a continuous forward flow, like the call progressing.
       gsap.set(lines, { attr: { x2: 0 } });
       gsap.to(lines, {
         attr: { x2: (i: number) => 600 * LINE_WIDTHS[i] },
@@ -49,7 +49,7 @@ function CurveLines() {
           y1={8 + i * 9}
           x2={600 * width}
           y2={8 + i * 9}
-          stroke="#06312f"
+          stroke="#202020"
           strokeWidth="1.5"
           strokeLinecap="round"
         />
@@ -117,7 +117,7 @@ export function ProblemSolution() {
             <div>
               <PillBadge>The problem</PillBadge>
               <h3 className="mt-[14px] max-w-3xl font-display text-[28px] font-semibold leading-[1.15] tracking-[-0.02em] text-ink sm:text-[40px]">
-                The phone is the front door to your hospital — and it&apos;s too often unanswered, on
+                The phone is the front door to your hospital, and it&apos;s too often unanswered, on
                 hold, or quietly sending patients to a competitor.
               </h3>
             </div>
@@ -132,7 +132,7 @@ export function ProblemSolution() {
               <PillBadge>The solution</PillBadge>
               <h3 className="mt-[14px] font-display text-[28px] font-semibold leading-[1.15] tracking-[-0.02em] text-ink sm:text-[40px]">
                 Curaevox answers every call, understands what the patient needs, matches the right
-                doctor, and books the visit — then follows up after.
+                doctor, and books the visit, then follows up after.
               </h3>
             </div>
           </div>

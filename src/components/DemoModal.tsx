@@ -52,7 +52,7 @@ export function DemoModal({ open, onClose }: DemoModalProps) {
         </h2>
         <p className="mt-2 text-[14px] text-muted">
           See how Curaevox answers every patient call, books the right doctor, and follows up after
-          every visit — live, on your numbers.
+          every visit, live on your numbers.
         </p>
         <form
           className="mt-[28px] space-y-[14px]"

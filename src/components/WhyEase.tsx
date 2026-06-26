@@ -9,7 +9,7 @@ const features = [
   {
     title: "Answers every call, 24/7",
     description:
-      "The inbound agent converses naturally, pulls up doctor specialties and live availability, captures the reason for the visit, and books the right slot — no hold music, no voicemail.",
+      "The inbound agent converses naturally, pulls up doctor specialties and live availability, captures the reason for the visit, and books the right slot. No hold music, no voicemail.",
     icon: "voice",
   },
   {
@@ -21,7 +21,7 @@ const features = [
   {
     title: "A companion for every patient",
     description:
-      "Each patient gets a dedicated agent the doctor configures, monitors, annotates, and summarizes — every conversation saved to one dashboard.",
+      "Each patient gets a dedicated agent the doctor configures, monitors, annotates, and summarizes, with every conversation saved to one dashboard.",
     icon: "dashboard",
   },
 ];
@@ -30,11 +30,11 @@ function WhyIcon({ type }: { type: string }) {
   if (type === "voice") {
     return (
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <path d="M8 18V22" stroke="#06312f" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M14 13V27" stroke="#06312f" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M20 8V32" stroke="#06312f" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M26 13V27" stroke="#06312f" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M32 18V22" stroke="#06312f" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M8 18V22" stroke="#202020" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M14 13V27" stroke="#202020" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M20 8V32" stroke="#202020" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M26 13V27" stroke="#202020" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M32 18V22" stroke="#202020" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     );
   }
@@ -43,13 +43,13 @@ function WhyIcon({ type }: { type: string }) {
       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
         <path
           d="M30 20C30 25.523 25.523 30 20 30C14.477 30 10 25.523 10 20C10 14.477 14.477 10 20 10C23.5 10 26.58 11.8 28.36 14.5"
-          stroke="#06312f"
+          stroke="#202020"
           strokeWidth="1.5"
           strokeLinecap="round"
         />
         <path
           d="M29 9.5V15H23.5"
-          stroke="#06312f"
+          stroke="#202020"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -59,11 +59,11 @@ function WhyIcon({ type }: { type: string }) {
   }
   return (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-      <rect x="7" y="9" width="26" height="22" rx="3" stroke="#06312f" strokeWidth="1.5" />
-      <path d="M16 9V31" stroke="#06312f" strokeWidth="1.5" />
-      <path d="M20 15H29" stroke="#06312f" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M20 20H29" stroke="#06312f" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M20 25H25" stroke="#06312f" strokeWidth="1.5" strokeLinecap="round" />
+      <rect x="7" y="9" width="26" height="22" rx="3" stroke="#202020" strokeWidth="1.5" />
+      <path d="M16 9V31" stroke="#202020" strokeWidth="1.5" />
+      <path d="M20 15H29" stroke="#202020" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M20 20H29" stroke="#202020" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M20 25H25" stroke="#202020" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   );
 }

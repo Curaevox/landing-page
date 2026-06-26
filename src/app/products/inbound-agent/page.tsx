@@ -7,12 +7,12 @@ const sections = [
   {
     id: "triage",
     title: "Answer & triage calls",
-    body: "The agent picks up on the first ring, 24/7. It converses naturally, understands why the patient is calling, and gathers the information your front desk would — without hold music or voicemail.",
+    body: "The agent picks up on the first ring, 24/7. It converses naturally, understands why the patient is calling, and gathers the information your front desk would, without hold music or voicemail.",
   },
   {
     id: "matching",
     title: "Doctor matching",
-    body: "Using your roster of specialties, languages, and locations, the agent recommends the right doctor for the patient's need and explains the options clearly — bringing transparency to a step that's usually opaque.",
+    body: "Using your roster of specialties, languages, and locations, the agent recommends the right doctor for the patient's need and explains the options clearly, bringing transparency to a step that's usually opaque.",
   },
   {
     id: "booking",
@@ -31,7 +31,7 @@ export default function InboundAgentPage() {
     <ProductPageShell
       product="Inbound Agent"
       title="Every patient call, answered and booked"
-      description="A voice agent that answers, triages, matches the right doctor, and books the visit — on the first call."
+      description="A voice agent that answers, triages, matches the right doctor, and books the visit, all on the first call."
       sections={sections}
     />
   );
